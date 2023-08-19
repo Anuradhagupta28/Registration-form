@@ -53,5 +53,5 @@ Please submit your completed assignment by creating a pull request to this repos
 - Utilize responsive design principles to ensure your pages look good on different screen sizes.
 - You are not required to implement backend authentication or databases for this assessment.
 
-Best of luck! Happy coding!
+The deploy link of Registration Form : https://registration-form-hazel.vercel.app/
 
