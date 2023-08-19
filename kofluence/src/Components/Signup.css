@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+   
     background-color: #f4f4f4;
-    
+    /* height:120vh */
 
   }
   
@@ -15,6 +15,7 @@
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* height:105vh */
   }
   
   .signup-form h1 {
@@ -85,3 +86,17 @@
  color:red;
  font-size: small;
   }
+  /* @media screen and (min-width: 768px) and (max-width: 912px) {
+   
+    .signup-container {
+      
+      height:120vh
+  
+    }
+} */
+
+
+
+
+
+

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Signup.css';
 import { useNavigate } from 'react-router-dom';
 
+
+
 const Signup = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -98,6 +100,7 @@ const [isPasswordTouched, setIsPasswordTouched] = useState(false);
         src="https://www.linkpicture.com/q/kofluence_2_-removebg-preview.png"/>
       <h1>Sign Up</h1>
       <p className="small">Create a new account ,it's quick & easy</p>
+   
         <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
         <input type="password" name="password" placeholder="Password" onChange={handleChange} onBlur={handleInputFocus} onFocus={handlePasswordFocus} required  />
