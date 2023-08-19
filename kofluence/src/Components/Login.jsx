@@ -80,7 +80,7 @@ const Login = () => {
        
         <button type="submit">Login</button>
         {error && <p className="error-message">{error}</p>}
-        <p onClick={handlePage}  className="last">Sign up for kofluence</p>
+        <p className="smalls" >Don't have account? <span onClick={handlePage}  className="last">Register Now</span></p>
       </form>
     </div>
   );
