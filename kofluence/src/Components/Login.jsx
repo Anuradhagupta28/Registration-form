@@ -10,6 +10,7 @@ const Login = () => {
     email: '',
     password: '',
   });
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
 
   const navigate = useNavigate();
@@ -65,7 +66,18 @@ const Login = () => {
       <h1>Login</h1>
       <p  className="smalls">You can login now!</p>
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
+        <input type={showPassword ? 'text' : 'password'}name="password" placeholder="Password" onChange={handleChange}  required />
+        <div id='divShowPassword'> 
+          <input
+        type="checkbox"
+        id="showPassword"
+        checked={showPassword}
+        onChange={() => setShowPassword(!showPassword)}
+      
+      />
+          Show Password
+        </div>
+       
         <button type="submit">Login</button>
         {error && <p className="error-message">{error}</p>}
         <p onClick={handlePage}  className="last">Sign up for kofluence</p>

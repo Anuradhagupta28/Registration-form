@@ -33,10 +33,12 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none;
   }
   
   .signup-form select {
     height: 40px;
+    width: 95%;
   }
   
   .signup-form button {
@@ -76,6 +78,7 @@
     
   }
   .last {
-    color:#0056b3
+    color:#0056b3;
+    cursor: pointer;
   }
   

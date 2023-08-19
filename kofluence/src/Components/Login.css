@@ -23,12 +23,13 @@
   .login-form img{
     margin:-15px 0px
   }
-  .login-form input {
+  .login-form > input {
     width: 90%;
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none;
   }
   
   .login-form button {
@@ -54,6 +55,14 @@
     color:#8d8682;
   }
   .last {
-    color:#0056b3
+    color:#0056b3;
+    cursor: pointer;
   }
-  
+  #showPassword{
+    display :block;
+  }
+  #divShowPassword{
+    display: flex;
+    gap: 5px;
+    margin: 10px 0px 15px 0px;
+  }

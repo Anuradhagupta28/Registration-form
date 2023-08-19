@@ -80,6 +80,8 @@ const Signup = () => {
         <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
         <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
+        
+    
         <input type="tel" name="mobileNumber" placeholder="Mobile Number" onChange={handleChange} required />
         <input type="number" name="age" placeholder="Age" onChange={handleChange} required />
         <textarea name="address" placeholder="Address" onChange={handleChange} required />
