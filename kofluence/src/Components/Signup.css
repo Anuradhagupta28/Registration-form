@@ -81,4 +81,7 @@
     color:#0056b3;
     cursor: pointer;
   }
-  
+  #passwordCheck{
+ color:red;
+ font-size: small;
+  }

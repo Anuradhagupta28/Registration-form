@@ -14,8 +14,8 @@ const Signup = () => {
     occupation: ''
   });
   const navigate = useNavigate();
-
-
+const [isPasswordValid, setIsPasswordValid] = useState(true);
+const [isPasswordTouched, setIsPasswordTouched] = useState(false);
 
 
   const handleChange = (e) => {
@@ -23,13 +23,33 @@ const Signup = () => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
+      
+
     }));
+       
+    if (name === 'password') {
+      const isValid = passwordValidate(value);
+      setIsPasswordValid(isValid);
+    }
+
   };
+
+
+  const passwordValidate=(password)=>{
+    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
+    return passwordRegex.test(password)
+  }
 
   const handlePage=()=>{
     navigate('/login');
   }
-
+  const handlePasswordFocus = () => {
+    setIsPasswordTouched(true);
+  };
+  const handleInputFocus = () => {
+    setIsPasswordTouched(false);  
+  };
+  
 
 
   
@@ -79,9 +99,13 @@ const Signup = () => {
       <p className="small">Create a new account ,it's quick & easy</p>
         <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-        
-    
+        <input type="password" name="password" placeholder="Password" onChange={handleChange} onBlur={handleInputFocus} onFocus={handlePasswordFocus} required  />
+        {
+            !isPasswordValid && isPasswordTouched &&<span id="passwordCheck">
+              *Password should be 8-20 characters and include at least 1 letter, 1 number, and 1 special character!
+            </span>
+
+        }
         <input type="tel" name="mobileNumber" placeholder="Mobile Number" onChange={handleChange} required />
         <input type="number" name="age" placeholder="Age" onChange={handleChange} required />
         <textarea name="address" placeholder="Address" onChange={handleChange} required />
