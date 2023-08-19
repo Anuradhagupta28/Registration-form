@@ -1,0 +1,30 @@
+/* UserDetails.css */
+.user-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .user-details {
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details h1 {
+    margin-bottom: 20px;
+    color:#FFBF00
+  }
+  
+  .user-details p {
+    margin: 5px 0;
+  }
+  
+  .user-details strong {
+    font-weight: bold;
+  }
+  
