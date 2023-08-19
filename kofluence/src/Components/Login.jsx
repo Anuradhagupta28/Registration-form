@@ -25,6 +25,10 @@ const Login = () => {
     }));
   };
 
+  const handlePage=()=>{
+    navigate('/');
+  }
+
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -54,11 +58,17 @@ const Login = () => {
     <div className="login-container">
      
       <form className="login-form" onSubmit={handleLogin}>
+      <img    
+        width="100"
+        height="80"
+        src="https://www.linkpicture.com/q/kofluence_2_-removebg-preview.png"/>
       <h1>Login</h1>
+      <p  className="smalls">You can login now!</p>
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
         <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
         <button type="submit">Login</button>
         {error && <p className="error-message">{error}</p>}
+        <p onClick={handlePage}  className="last">Sign up for kofluence</p>
       </form>
     </div>
   );

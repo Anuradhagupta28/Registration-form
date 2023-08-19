@@ -26,6 +26,10 @@ const Signup = () => {
     }));
   };
 
+  const handlePage=()=>{
+    navigate('/login');
+  }
+
 
 
   
@@ -66,7 +70,13 @@ const Signup = () => {
     <div className="signup-container">
      
       <form className="signup-form" onSubmit={handleSubmit}>
+        <img    
+        width="100"
+        height="80"
+        
+        src="https://www.linkpicture.com/q/kofluence_2_-removebg-preview.png"/>
       <h1>Sign Up</h1>
+      <p className="small">Create a new account ,it's quick & easy</p>
         <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
         <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
@@ -80,6 +90,8 @@ const Signup = () => {
         </select>
         <input type="text" name="occupation" placeholder="Occupation" onChange={handleChange} required />
         <button type="submit">Register</button>
+        <p onClick={handlePage} className="last">Already have an account?</p>
+
       </form>
 
       

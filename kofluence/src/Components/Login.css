@@ -16,10 +16,13 @@
   }
   
   .login-form h1 {
-    margin-bottom: 20px;
+    margin-bottom: -10px;
+    
     
   }
-  
+  .login-form img{
+    margin:-15px 0px
+  }
   .login-form input {
     width: 90%;
     margin-bottom: 15px;
@@ -46,5 +49,11 @@
   .error-message {
     color: red;
     margin-top: 10px;
+  }
+  .smalls {
+    color:#8d8682;
+  }
+  .last {
+    color:#0056b3
   }
   
