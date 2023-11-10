@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Signup.css';
 import { useNavigate } from 'react-router-dom';
+import kofluence from "../assets/kofluence (2).png"
 
 
 
@@ -97,7 +98,7 @@ const [isPasswordTouched, setIsPasswordTouched] = useState(false);
         width="100"
         height="80"
         
-        src="https://www.linkpicture.com/q/kofluence_2_-removebg-preview.png"/>
+        src={kofluence}/>
       <h1>Sign Up</h1>
       <p className="small">Create a new account ,it's quick & easy</p>
    

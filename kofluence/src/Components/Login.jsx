@@ -4,7 +4,7 @@ import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../Contex/AuthContex';
-
+import kofluence from "../assets/kofluence (2).png"
 import { ArrowRight } from 'react-bootstrap-icons';
 
 
@@ -65,7 +65,7 @@ const Login = () => {
       <img    
         width="100"
         height="80"
-        src="https://www.linkpicture.com/q/kofluence_2_-removebg-preview.png"/>
+        src={kofluence}/>
       <h1>Login</h1>
       <p  className="smalls">You can login now!</p>
         <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
